@@ -1,0 +1,240 @@
+body {
+    background-color: whitesmoke;
+}
+
+table {
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+
+h1 {
+    text-align: center;
+    font-family: Cambria;
+}
+
+h1::selection {
+    background: transparent;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+label {
+    color: #3FB2B0;
+}
+
+label::selection {
+    background: transparent;
+}
+
+legend {
+    color: #3FB2B0;
+}
+
+img {
+    height: 20px;
+    width: 20px;
+}
+
+button {
+    background-color: transparent;
+}
+
+
+a::selection {
+    background: transparent;
+}
+
+a:link {
+    color: #3FB2B0;
+    font-family: Cambria;
+}
+
+a:visited {
+    color: #3FB2B0;
+}
+
+a:focus {
+    border-bottom: 1px solid;
+    background: #148F77;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+    background: none;
+}
+
+a:active {
+    background: none;
+    color: #148F77;
+}
+
+p {
+    text-align: center;
+    font-family: Cambria;
+    font-size: 100%;
+    color: #777;
+}
+
+p::selection {
+    background: transparent;
+}
+
+
+#div-principal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 8px 8px 20px #999;
+    border-radius: 1em;
+}
+
+#datos {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0%;
+    border-radius: 1em 0em 0em 1em;
+}
+
+#div-color {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #A3E4D7;
+    width: 100%;
+    height: 100%;
+    border-radius: 0em 1em 1em 0em;
+}
+
+#ver {
+    border-color: transparent;
+}
+
+.img-void {
+    height: 15px;
+}
+
+.img-void2 {
+    height: 45px;
+}
+
+img::selection {
+    background: transparent;
+}
+
+.input {
+    width: 80%;
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 1rem;
+    outline: none;
+    background-color: transparent;
+    color: #777;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.input:focus,
+input:hover {
+    width: 75%;
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 5rem;
+    border-color: #3FB2B0;
+}
+
+.input::placeholder {
+    color: #3FB2B0;
+}
+
+.input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.send {
+    background-color: #FFC300;
+    width: 70%;
+    height: 45px;
+    border-color: transparent;
+    font-size: 17px;
+    color: white;
+    box-shadow: 4px 4px 10px #999;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.send::selection {
+    background: transparent;
+}
+
+.send:disabled {
+    filter: brightness(.8);
+}
+
+.send:focus,
+send:hover {
+    width: 50%;
+    outline: none;
+    padding: .2rem 1rem;
+}
+
+.switch {
+    font-size: 10px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #3FB2B0;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px rgb(0, 221, 80);
+}
+
+input:checked+.slider:before {
+    transform: translateX(1.5em);
+}

@@ -1,0 +1,152 @@
+p{
+    font-family: Verdana;
+    font-style: bold;
+    font-size: 24px;
+    color:#000000;
+    text-align: justify;
+}
+body{
+    text-align: center;
+    background-color: #FDFFDA ;
+}
+
+.card {
+width: 275px;
+height: 140px;
+transition: all .5s;
+box-shadow: 15px 15px 30px rgba(255, 255, 255, 0.815),
+         -15px -15px 30px rgba(65, 65, 65, 0.356);
+text-align: center;
+overflow: hidden;
+border-radius: 2em;
+}
+
+.card:hover {
+height: 340px;
+background: linear-gradient(to top,#ffffffc4,#E4E4E4);
+}
+
+.card .header {
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: linear-gradient(to top,#005547,#006F5D);
+margin-bottom: 16px;
+}
+
+.card .header .img-box {
+width: 50px;
+}
+
+.card .header .title {
+font-size: 1.1em;
+letter-spacing: .1em;
+font-weight: 500;
+text-transform: uppercase;
+padding: 4px 0 14px 0;
+transition: all .5s;
+color: #ffbb00;
+font-style: bold;
+}
+
+.card:hover .header {
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.card:hover .card .header .title {
+padding: 0;
+}
+
+.card .content {
+display: block;
+text-align: justify;
+color: #000a36;
+margin: 0 18px;
+}
+
+.card .content p {
+transition: all .5s;
+font-size: 1em;
+margin-bottom: 8px;
+}
+
+.card .content a {
+color: #1d8174;
+cursor: pointer;
+transition: all .5s;
+font-size: .8rem;
+font-weight: 500;
+text-transform: uppercase;
+}
+.o{
+width: 290px;
+height: 370px;
+border-radius: 10%;
+}
+table{
+text-align: justify;
+font-size: 14px;
+font-style: bold;
+font-family: Verdana;
+}
+/*Boton*/
+.btn {
+    --color: #005547;
+    --color2: #ffbb00;
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: Verdana;
+    text-transform: uppercase;
+    color: var(--color);
+    margin-left: 25%;
+    margin-top: 15%;
+   }
+   
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    color:#ffbb00;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover {
+    color: var(--color2);
+   }
+   
+   .btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
